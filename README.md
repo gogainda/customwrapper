@@ -34,11 +34,13 @@ config.assets.precompile += [..., 'tinymce/*']
 4.You can modify plugin code to use it like pure wrapper(without header), for example wrap selected text with
 
 nested divs
-```<div>
+```
+<div>
 
 <div>selected_text</div>
 
-</div>```
+</div>
+```
 
 
 IMPORTANT
