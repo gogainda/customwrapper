@@ -1,5 +1,10 @@
 customwrapper
 =============
+Custom wrapper plugin for tinymce-rails gem
+---------------------------------------------
+
+*!!Tested only with https://github.com/spohlenz/tinymce-rails gem, may be works with original tiny mce, i didnt check it!!*
+
 
 I used this plugin to repsesent selected  text in tinymce as a spoiler.
 
@@ -11,9 +16,6 @@ That it!
 
 Also, you can modify wrapper template, just  click on Advanced prop. in pop up window
 
-
-*Custom wrapper plugin for tinymce-rails gem*
-*!!Tested only with https://github.com/spohlenz/tinymce-rails gem, may be works with original tiny mce, i didnt check it!!*
 
 
 How to use it with Ruby on Rails projects
