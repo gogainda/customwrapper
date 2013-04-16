@@ -8,12 +8,16 @@ Custom wrapper plugin for tinymce-rails gem
 How to use it with Ruby on Rails projects
 =============
 1.Put cloned folder customwrapper to <project_name>\app\assets\javascripts\tinymce\plugins
+
 2.Update your tinymce.yml something like that
-  theme_advanced_buttons2 : "...,customwrapper"
+  ```theme_advanced_buttons2 : "...,customwrapper"
   plugins:
-    - customwrapper
+    - customwrapper  ```
+
 3.If plugin doesnt work in production add something like this
+```
 config.assets.precompile += [..., 'tinymce/*']
+```
 
 
 
