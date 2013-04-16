@@ -50,9 +50,11 @@ nested divs
 
 IMPORTANT
 =====
-There is no translation rather then russian, so to get it work with you language you should add translation files
+There is no translation rather then russian, so to get it works with your language you should add translation files
 
 en.js, en_dlg.js ( for english language)
+
+How? See source code
 
 
 
