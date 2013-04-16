@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{#customwrapper_dlg.title}</title>
+    <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+</head>
+<body>
+
+<form onsubmit="CustomWrapperDialog.insert(); return false;" action="#">
+    <table style="border: 0; width: 100%">
+        <tr >
+            <td style="vertical-align: top;width: 126px;">
+                <span>{#customwrapper_dlg.header}</span>
+            </td>
+            <td >
+                <input type="text" id="header" name="header" style="width: 100%">
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="#" id="advanced" onclick="toggle(document.getElementById('advancedSettings')); return false;">{#customwrapper_dlg.advanced}</a>
+            </td>
+        </tr>
+        <tr id="advancedSettings" style="display: none">
+            <td style="vertical-align: top; width: 126px;">
+                <span>{#customwrapper_dlg.template}</span>
+            </td>
+            <td>
+                <textarea cols="44" rows="6" id="template" name="template" style="width: 100%;"></textarea>
+            </td>
+
+        </tr>
+    </table>
+
+    <div class="mceActionPanel" style="text-align: right;">
+        <input type="button" id="insert" name="insert" value="{#insert}" onclick="CustomWrapperDialog.insert();"/>
+        <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();"/>
+    </div>
+</form>
+
+</body>
+</html>
